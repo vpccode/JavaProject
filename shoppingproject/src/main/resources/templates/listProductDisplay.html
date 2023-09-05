@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="showproduct.css"> -->
+    <title>Order Properties</title>
+    
+</head>
+<body>
+    <h1>Order Properties</h1>
+    <p>This page displays the properties of an order:</p>
+
+    <div th:each="display:${myreg}">
+        
+        <strong><p th:text="'Product  name is  :'+${display.product_name}"></p></strong>
+        <strong><p th:text="'Product  name is  :'+${display.price}"></p></strong>
+        <strong><p th:text="'Product  name is  :'+${display.description}"></p></strong>
+        <strong><p th:text="'Product  description is  :'+${display.customFile}"></p></strong>
+        <strong><p th:text="'Product  price  is  :'+${display.stock_quantity}"></p></strong>
+        *****************************************************************************
+      </div>
+
+ </body>
+ </html>
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+     Head content
+</head>
+<body>
+    <table for="listProductsDisplay" name="listProductsDisplay" id="listProductsDisplay">
+        <thead>
+            <tr class="tr">
+                <th class="th">Product Id</th>
+                <th class="th">Product Name</th>
+                <th class="th">Category</th>
+                <th class="th">Price</th>
+                <th class="th">Description</th>
+                <th class="th">Stock Quantity</th>
+            <th class="th">imges</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tr" th:each="product:${ProductsDisplay}">
+                <td class="td" th:text="${product.product_id}"></td>
+                <td class="td" th:text="${product.product_name}"></td>
+               <td class="td" th:text="${product.category.category_id}"></td>
+                <td class="td" th:text="${product.price}"></td>
+                <td class="td" th:text="${product.description}"></td>
+                <td class="td" th:text="${product.stock_quantity}"></td>
+                <td class="td" th:text="${product.imges}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product_Display</title>
+</head>
+<body>
+    <h1>List of Product_Display</h1>
+
+<form name="listProductDisplay" action="/pdisplay" method="post">
+ 
+   <level for="product_name">Product_name</level>
+    <input type="text" id="product_name" name="product_name" placeholder="product_name" required><br>
+
+    <label for=" price">Price</label>
+    <input type="number" id=" price" name=" price" placeholder="Enter  Price "><br>
+   
+    <label for="description">Description</label>
+    <input type="description" id="description" name="description" placeholder=" Write Description If want to Write"><br>
+
+   
+    <label for="customFile">Add an imges</label>
+    <input type="file" id="customFile" name="customFile" placeholder="file"  required><br>
+    
+     <label for="delete_product">Delete Product</label>
+    <input type="file" id="delete_product" name="delete_product" placeholder="delete_product"  required><br>
+
+    <label for="customFile">file</label> 
+
+   
+
+    <button type="submit" value="submit">Submit</button>
+</form> 
+
+
+</body>
+</html> -->

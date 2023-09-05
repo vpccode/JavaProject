@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Add Product</title>
+</head>
+<body >
+    <h1>Add Your  new Product Here/Product Add Product</h1>
+    <h1>Product_Registration</h1>
+    
+    <form  name="addProductRegistration" action="/addproduct" method="post" >
+
+        <label for="product_name">Product_name</label>
+        <input type="text" id="product_name" name="product_name" placeholder="Enter Product Name"><br>
+
+       <!--<label for="Categories_id">Categories</label>
+        <input type="text" id="Categories_id" name="Categories_id"> <br>-->
+
+       <label for="price">Price</label>
+        <input type="number" id=" price" name=" price" placeholder="Enter  Price "><br>
+
+        <label for="description">Description</label>
+        <input type="description" id="description" name="description" placeholder=" Write Description If want to Write"><br>
+
+   <!--for="coustomFile"-- add image me-->
+   <label for="website">Website URL:</label>
+   <input type="url" id="website" name="website" placeholder="url" required><br><br>
+          
+        <label for="categoryId">Category:</label>
+        <select id="categoryId" name="categoryId">
+            <option value="1">Electronics</option>
+            <option value="2">Clothing</option>
+            <option value="2">Digner DEconration product</option>
+            <option value="2">Gold</option>
+            <!-- Add more options for other categories -->
+        </select><br>
+
+        <label for="stock_quantity">stock_quantity</label>
+        <input type="text" id="stock_quantity" name="stock_quantity" placeholder="stock_quantity">
+
+        <!--<label for="customFile"> Choose File</label>-->
+        
+       <button><input type="Submit" placeholder="Submit"></button>
+    </form>
+
+
+
+</body>
+</html>
+
